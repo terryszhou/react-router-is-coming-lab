@@ -32,8 +32,9 @@ export const App = () => {
                 <Route 
                     path="/houses/:houseId/members/:memberId"
                     render={props => {
-                        const house = GOT.find(e => e.id.toString() === props.match.params.id)
-                        props = {...props, ...house}
+                        const house = GOT.find(e => e.id.toString() === props.match.params.houseId)
+                        const member = house.people.find(member => member.id.toString() === props.match.params.memberId)
+                        props = {...props, ...member}
                         return <Member {...props} />
                     }}
                 />

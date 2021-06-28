@@ -1,11 +1,11 @@
-export const Member = () => {
+export const Member = (props) => {
     return (
         <div className="page">
             <div className="header">
-                <h2>Specific Member Name</h2>
+                <h2>{props.name}</h2>
             </div>
             <div className="desc">
-                A description
+                <p>{props.description}</p>
             </div>
         </div>
     )
