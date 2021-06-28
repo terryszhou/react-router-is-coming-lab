@@ -5,15 +5,15 @@ export const HouseSingular = (props) => {
         return (
             <Link
                 to={`/houses/${props.id}/members/${member.id}`}
-            >
-                <li key={idx}>{member.name}</li>
+                className="linkStyle">
+                <h3 key={idx}>{member.name}</h3>
             </Link>
         )
     })
     return (
         <div className="page">
             <div className="header">
-                <h2>Members of the {props.name}</h2>
+                <h1>Members of the {props.name}</h1>
             </div>
             <ul className="list">
                 {memberData}

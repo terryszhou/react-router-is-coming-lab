@@ -1,0 +1,44 @@
+main {
+    margin: 40px auto;
+    padding: 50px;
+    color: rgb(44,44,44);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.houseLink {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(171,123,68);
+    color: black;
+    transition-duration: 0.2s;
+}
+
+.houseLink:hover {
+    color: white;
+    transition-duration: 0.2s;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background-color: rgb(248,233,210);
+    box-shadow: 0 0 15px 0 black;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+h1 {
+    text-align: center;
+}
+
+.desc {
+    text-align: justify;
+    text-indent: 50px;
+}

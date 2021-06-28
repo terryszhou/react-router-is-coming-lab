@@ -3,9 +3,9 @@ export const Member = (props) => {
         <div className="page">
             <div className="header">
                 <a href={`https://awoiaf.westeros.org/index.php/${props.wikiSuffix}`}>
-                    <h2>
+                    <h1>
                         {props.name}
-                    </h2>
+                    </h1>
                 </a>
             </div>
             <div className="desc">

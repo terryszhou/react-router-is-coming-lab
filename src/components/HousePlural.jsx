@@ -5,7 +5,8 @@ export const HousePlural = (props) => {
         return (
             <div>
                 <Link
-                    to={`/houses/${house.id}`}>
+                    to={`/houses/${house.id}`}
+                    className="linkStyle">
                     <h3>{house.name}</h3>
                 </Link>
             </div>
@@ -15,7 +16,7 @@ export const HousePlural = (props) => {
     return (
         <div>
             <div className="header">
-                <h2>Game of Thrones Houses</h2>
+                <h1>Houses of Westeros</h1>
             </div>
             <ul className="list">
                 {gotDATA}
