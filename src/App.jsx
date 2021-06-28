@@ -22,7 +22,7 @@ export const App = () => {
                     render={() => <HousePlural gameOfThrones={GOT}/>}
                 />
                 <Route 
-                    path="/houses/:id"
+                    exact path="/houses/:id"
                     render={props => {
                         const house = GOT.find(e => e.id.toString() === props.match.params.id)
                         props = {...props, ...house}
@@ -31,7 +31,11 @@ export const App = () => {
                 />
                 <Route 
                     path="/houses/:houseId/members/:memberId"
-                    component={Member}
+                    render={props => {
+                        const house = GOT.find(e => e.id.toString() === props.match.params.id)
+                        props = {...props, ...house}
+                        return <Member {...props} />
+                    }}
                 />
             </Switch>
         </Router>
