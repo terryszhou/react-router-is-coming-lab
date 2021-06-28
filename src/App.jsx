@@ -23,7 +23,11 @@ export const App = () => {
                 />
                 <Route 
                     path="/houses/:id"
-                    component={HouseSingular}
+                    render={props => {
+                        const house = GOT.find(e => e.id.toString() === props.match.params.id)
+                        props = {...props, ...house}
+                        return <HouseSingular {...props} />
+                    }}
                 />
                 <Route 
                     path="/houses/:houseId/members/:memberId"
