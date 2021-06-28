@@ -1,4 +1,4 @@
-const gameOfThrones = [
+export const gameOfThrones = [
     {
         name: 'Starks',
         wikiSuffix: 'House_Stark',
@@ -289,5 +289,3 @@ const gameOfThrones = [
         id: 11
     }
 ]
-
-export default gameOfThrones;
